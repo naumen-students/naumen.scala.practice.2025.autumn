@@ -1,0 +1,26 @@
+C:\Users\SHADOW>scala
+Welcome to Scala 3.7.3 (21.0.8, Java OpenJDK 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+
+scala> var name = "Daniel Butakov"
+var name: String = Daniel Butakov
+
+scala> println(s"Привет, Скала! Это $name")
+Привет, Скала! Это Daniel Butakov
+
+scala> println(s"Hello, Scala! This is $name")
+Hello, Scala! This is Daniel Butakov
+
+scala> println(s"Hola, Scala! This is $name")
+Hola, Scala! This is Daniel Butakov
+
+scala> println(s"Привет, Скала! Это ${name.reverse}")
+Привет, Скала! Это vokatuB leinaD
+
+scala> println(s"Hello, Scala! This is ${name.reverse}")
+Hello, Scala! This is vokatuB leinaD
+
+scala> println(s"Hola, Scala! This is ${name.reverse}")
+Hola, Scala! This is vokatuB leinaD
+
+scala>
