@@ -1,0 +1,40 @@
+C:\Users\mnata>scala
+Welcome to Scala 2.12.10 (OpenJDK 64-Bit Server VM, Java 11.0.28).
+Type in expressions for evaluation. Or try :help.
+
+scala> val name="Mironova Natalia"
+name: String = Mironova Natalia
+
+scala> println(s"Hello Scala!This is $name")
+Hello Scala!This is Mironova Natalia
+
+scala> val hi=Hola
+<console>:11: error: not found: value Hola
+       val hi=Hola
+              ^
+
+scala> val hi="Hola"
+hi: String = Hola
+
+scala> println(s"$hi scala! this is $name")
+Hola scala! this is Mironova Natalia
+
+scala> val greetings = List("Hola", "Guten tag", "Hello", "Bonjour")
+greetings: List[String] = List(Hola, Guten tag, Hello, Bonjour)
+
+scala> greetings.foreach(greeting => println(s"$greeting, Скала! Это $name"))
+Hola, Скала! Это Mironova Natalia
+Guten tag, Скала! Это Mironova Natalia
+Hello, Скала! Это Mironova Natalia
+Bonjour, Скала! Это Mironova Natalia
+
+scala> val reversename=name.reverse
+reversename: String = ailataN avonoriM
+
+scala> greetings.foreach(greeting => println(s"$greeting, Скала! Это $reversename"))
+Hola, Скала! Это ailataN avonoriM
+Guten tag, Скала! Это ailataN avonoriM
+Hello, Скала! Это ailataN avonoriM
+Bonjour, Скала! Это ailataN avonoriM
+
+scala>
