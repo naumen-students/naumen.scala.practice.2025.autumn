@@ -1,0 +1,31 @@
+PS C:\Users\dimab\OneDrive\Desktop\Projects\naumen.scala.course.2025.autumn> scala
+Welcome to Scala 3.7.3 (17.0.16, Java OpenJDK 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+
+scala> val name = "Дмитрий Бабинцев"
+val name: String = Дмитрий Бабинцев
+
+scala> val originalGreeting = s"Привет, Скала! Это $name"
+val originalGreeting: String = Привет, Скала! Это Дмитрий Бабинцев
+
+scala> println(originalGreeting)
+Привет, Скала! Это Дмитрий Бабинцев
+
+scala> println(s"Hola, Скала! Это $name")
+Hola, Скала! Это Дмитрий Бабинцев
+
+scala> val greetings = List("Hola", "Guten tag")
+val greetings: List[String] = List(Hola, Guten tag)
+
+scala> def reverseName(str: String): String = str.reverse
+def reverseName(str: String): String
+
+scala> greetings.foreach { greeting =>
+     |   val reversedName = reverseName(name)
+     |   val modifiedGreeting = s"$greeting, Скала! Это $reversedName"
+     |   println(modifiedGreeting)
+     | }
+Hola, Скала! Это вецнибаБ йиртимД
+Guten tag, Скала! Это вецнибаБ йиртимД
+
+scala>
