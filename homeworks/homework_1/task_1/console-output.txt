@@ -1,0 +1,54 @@
+Last login: Sat Sep 20 23:28:22 on ttys000
+kirill@Air-Kirill ~ % scala
+Welcome to Scala 3.7.3 (1.8.0_301, Java Java HotSpot(TM) 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+                                                                                
+
+
+
+
+scala> def printHelloString(x_1: String, x_2: String, x_3: String, x_4: String): Unit = println(x_1 + " " + x_2 + "!" + " " + x_3 + " " + x_4)
+     | 
+     | val greetingEng = "Hello"
+     | val languageName =  "Scala"
+     | val thisIsEng = "This is"
+     | var name = "Anna Rubkaleva"
+     | 
+     | printHelloString(greetingEng, languageName, thisIsEng, name)
+     | 
+     | val greetingFr = "Bonjour"
+     | val thisIsFr = "Je m'appelle"
+     | 
+     | printHelloString(greetingFr, languageName, thisIsFr, name)
+     | 
+     | val greetingEsp = "Hola"
+     | val thisIsEsp = "Mi nombre es"
+     | 
+     | printHelloString(greetingEsp, languageName, thisIsEsp, name)
+     | 
+     | name = name.reverse
+     | 
+     | printHelloString(greetingEng, languageName, thisIsEng, name)
+     | 
+     | printHelloString(greetingFr, languageName, thisIsFr, name)
+     | 
+     | printHelloString(greetingEsp, languageName, thisIsEsp, name)
+     | 
+     | 
+     | 
+Hello Scala! This is Anna Rubkaleva
+Bonjour Scala! Je m'appelle Anna Rubkaleva
+Hola Scala! Mi nombre es Anna Rubkaleva
+Hello Scala! This is avelakbuR annA
+Bonjour Scala! Je m'appelle avelakbuR annA
+Hola Scala! Mi nombre es avelakbuR annA
+def printHelloString(x_1: String, x_2: String, x_3: String, x_4: String): Unit
+val greetingEng: String = Hello
+val languageName: String = Scala
+val thisIsEng: String = This is
+var name: String = avelakbuR annA
+val greetingFr: String = Bonjour
+val thisIsFr: String = Je m'appelle
+val greetingEsp: String = Hola
+val thisIsEsp: String = Mi nombre es
+name: String = avelakbuR annA
