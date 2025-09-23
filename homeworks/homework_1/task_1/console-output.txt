@@ -1,0 +1,35 @@
+C:\Users\User>scala
+
+Downloading JVM temurin:17
+Welcome to Scala 3.7.3 (17.0.16, Java OpenJDK 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+
+scala> val a = "Hello Scala! This is Maksim Zaitsev"
+val a: String = Hello Scala! This is Maksim Zaitsev
+
+scala> println (a)
+Hello Scala! This is Maksim Zaitsev
+
+scala> var aHola = a.replace("Hello", "Hola")
+var aHola: String = Hola Scala! This is Maksim Zaitsev
+
+scala> var aGutenTag = a.replace("Hello", "Guten tag")
+var aGutenTag: String = Guten tag Scala! This is Maksim Zaitsev
+
+scala> println(aHola)
+Hola Scala! This is Maksim Zaitsev
+
+scala> println(aGutenTag)
+Guten tag Scala! This is Maksim Zaitsev
+
+scala> var aHolaReverse = aHola.split(" This is ")(0) + " This is " + aHola.split(" This is ").last.reverse
+var aHolaReverse: String = Hola Scala! This is vestiaZ miskaM
+
+scala> var aGutenTagReverse = aGutenTag.split(" This is ")(0) + " This is " + aGutenTag.split(" This is ").last.reverse
+var aGutenTagReverse: String = Guten tag Scala! This is vestiaZ miskaM
+
+scala> println(aHolaReverse)
+Hola Scala! This is vestiaZ miskaM
+
+scala> println(aGutenTagReverse)
+Guten tag Scala! This is vestiaZ miskaM
