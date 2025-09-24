@@ -1,0 +1,47 @@
+[ustkost@linux ~] scala
+Welcome to Scala 2.13.16-20250225-154437-5a7c832 (OpenJDK 64-Bit Server VM, Java 24.0.2).
+Type in expressions for evaluation. Or try :help.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.jline.nativ.JLineNativeLoader in an unnamed module
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+
+scala> val a = "Привет, Скала! Это Константин"
+val a: String = Привет, Скала! Это Константин
+
+scala> println(a)
+Привет, Скала! Это Константин
+
+scala> val b = "Hola, Скала! Это Константин"
+val b: String = Hola, Скала! Это Константин
+
+scala> println(b)
+Hola, Скала! Это Константин
+
+scala> val c = "Guten tag, Скала! Это Константин"
+val c: String = Guten tag, Скала! Это Константин
+
+scala> println(c)
+Guten tag, Скала! Это Константин
+
+scala> val a2 = a.replace("Константин", "Константин".reverse)
+val a2: String = Привет, Скала! Это нитнатсноК
+
+scala> val b2 = b.replace("Константин", "Константин".reverse)
+val b2: String = Hola, Скала! Это нитнатсноК
+
+scala> val c2 = c.replace("Константин", "Константин".reverse)
+val c2: String = Guten tag, Скала! Это нитнатсноК
+
+scala> println(a2)
+Привет, Скала! Это нитнатсноК
+
+scala> println(b2)
+Hola, Скала! Это нитнатсноК
+
+scala> println(c2)
+Guten tag, Скала! Это нитнатсноК
+
+scala>
+
