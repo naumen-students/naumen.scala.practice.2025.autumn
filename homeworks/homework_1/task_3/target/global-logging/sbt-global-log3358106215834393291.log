@@ -1,0 +1,135 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.9.6 (Azul Systems, Inc. Java 17.0.16)
+[debug]       Load.loadUnit: plugins took 55.7025ms
+[debug]       Load.loadUnit: defsScala took 0.2414ms
+[debug] [Loading] Scanning directory C:\Users\imond\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\imond\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 9.4633 ms
+[debug]           Load.resolveProject(global-plugins) took 27.0326ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\imond\.sbt\1.0\plugins, plugins: List(<none>))) took 50.9034ms
+[debug] [Loading] Done in C:\Users\imond\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 71.136ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.1461ms
+[debug]     Load.loadUnit(file:/C:/Users/imond/.sbt/1.0/plugins/, ...) took 133.7188ms
+[debug]   Load.apply: load took 280.4643ms
+[debug]   Load.apply: resolveProjects took 7.7761ms
+[debug]   Load.apply: finalTransforms took 36.1528ms
+[debug]   Load.apply: config.delegates took 4.5495ms
+[debug]   Load.apply: Def.make(settings)... took 210.3704ms
+[debug]   Load.apply: structureIndex took 54.2348ms
+[debug]   Load.apply: mkStreams took 1.1534ms
+[info] loading global plugins from C:\Users\imond\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 1577.2275ms
+[debug]           Load.loadUnit: plugins took 13.2189ms
+[debug]           Load.loadUnit: defsScala took 0.0028ms
+[debug] [Loading] Scanning directory C:\Users\imond\Projects\naumen.scala.practice.2025.autumn\homeworks\homework_1\task_3\project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\imond\Projects\naumen.scala.practice.2025.autumn\homeworks\homework_1\task_3\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 0.9547 ms
+[debug]               Load.resolveProject(task_3-build) took 0.5937ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id task_3-build, base: C:\Users\imond\Projects\naumen.scala.practice.2025.autumn\homeworks\homework_1\task_3\project, plugins: List(<none>))) took 1.7939ms
+[debug] [Loading] Done in C:\Users\imond\Projects\naumen.scala.practice.2025.autumn\homeworks\homework_1\task_3\project, returning: (task_3-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 2.7119ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.0052ms
+[debug]         Load.loadUnit(file:/C:/Users/imond/Projects/naumen.scala.practice.2025.autumn/homeworks/homework_1/task_3/project/, ...) took 16.477ms
+[debug]       Load.apply: load took 17.2567ms
+[debug]       Load.apply: resolveProjects took 0.0853ms
+[debug]       Load.apply: finalTransforms took 5.4588ms
+[debug]       Load.apply: config.delegates took 0.1642ms
+[debug]       Load.apply: Def.make(settings)... took 35.2815ms
+[debug]       Load.apply: structureIndex took 13.9037ms
+[debug]       Load.apply: mkStreams took 0.0017ms
+[info] loading project definition from C:\Users\imond\Projects\naumen.scala.practice.2025.autumn\homeworks\homework_1\task_3\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 157.4811ms
+[debug]     Load.loadUnit: defsScala took 0.0025ms
+[debug] [Loading] Scanning directory C:\Users\imond\Projects\naumen.scala.practice.2025.autumn\homeworks\homework_1\task_3
+[debug]       Load.loadUnit: mkEval took 3.1262ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 0.8069 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 1.306ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: C:\Users\imond\Projects\naumen.scala.practice.2025.autumn\homeworks\homework_1\task_3, plugins: List(<none>))) took 2.6047ms
+[debug] [Loading] Done in C:\Users\imond\Projects\naumen.scala.practice.2025.autumn\homeworks\homework_1\task_3, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 107.9842ms
+[debug]     Load.loadUnit: cleanEvalClasses took 10.4954ms
+[debug]   Load.loadUnit(file:/C:/Users/imond/Projects/naumen.scala.practice.2025.autumn/homeworks/homework_1/task_3/, ...) took 276.5411ms
+[debug] Load.apply: load took 277.5294ms
+[debug] Load.apply: resolveProjects took 0.0724ms
+[debug] Load.apply: finalTransforms took 4.4449ms
+[debug] Load.apply: config.delegates took 0.2917ms
+[debug] Load.apply: Def.make(settings)... took 28.9766ms
+[debug] Load.apply: structureIndex took 12.5419ms
+[debug] Load.apply: mkStreams took 0.0016ms
+[info] set current project to Naumen12 (in build file:/C:/Users/imond/Projects/naumen.scala.practice.2025.autumn/homeworks/homework_1/task_3/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(~run, None, None)
+[info] sbt server started at local:sbt-server-fcb45b753d7ddedc0802
+[debug] Writing bsp connection file
+[info] started sbt server
+[debug] > Exec(__runWatch console0, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(__preWatch console0, None, None)
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\imond\Projects\naumen.scala.practice.2025.autumn\homeworks\homework_1\task_3\target\scala-2.13\classes ...
+[info] done compiling
+[success] Total time: 2 s, completed Sep 28, 2025, 1:07:42 PM
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(__postWatch console0, None, None)
+[debug] > Exec(__waitWatch console0, None, None)
