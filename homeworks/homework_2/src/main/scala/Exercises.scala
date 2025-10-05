@@ -16,7 +16,16 @@ object Exercises {
     /*Реализовать функцию, которая возвращает сумму всех целых чисел в заданном диапазоне (от iForm до iTo), которые делятся
     на 3 или на 5.*/
     /*Реализовать юнит-тесты в src/test/scala для данной функции.*/
-    def sumOfDivBy3Or5(iFrom: Int, iTo: Int): Long = ???
+    def sumOfDivBy3Or5(iFrom: Int, iTo: Int): Long = {
+      var acc = 0L
+      var i = iFrom
+      while (i <= iTo) {
+        if (i % 3 == 0 || i % 5 == 0)
+          acc += i
+        i += 1
+      }
+      acc
+    }
 
 
 
@@ -25,7 +34,30 @@ object Exercises {
     Число 80 раскладывается на множители 1 * 2 * 2 * 2 * 2 * 5, результат выполнения функции => Seq(2, 5).
     Число 98 можно разложить на множители 1 * 2 * 7 * 7, результат выполнения функции => Seq(2, 7).*/
     /*Реализовать юнит-тесты в src/test/scala для данной функции.*/
-    def primeFactor(number: Int): Seq[Int] = ???
+    def primeFactor(number: Int): Seq[Int] = {
+      var n = math.abs(number)
+      if (n <= 1)
+        return Seq.empty
+
+      val factors = scala.collection.mutable.ArrayBuffer.empty[Int]
+
+      if (n % 2 == 0) {
+        factors += 2
+        while (n % 2 == 0) n /= 2
+      }
+
+      var p = 3
+      while (p.toLong * p <= n) {
+        if (n % p == 0) {
+          factors += p
+          while (n % p == 0) n /= p
+        }
+        p += 2
+      }
+
+      if (n > 1) factors += n
+      factors.sorted
+    }
 
 
 
@@ -40,15 +72,19 @@ object Exercises {
     def abs(vec: Vector2D): Double = java.lang.Math.sqrt(vec.x * vec.x + vec.y * vec.y)
     def scalar(vec0: Vector2D, vec1: Vector2D): Double = vec0.x * vec1.x + vec0.y * vec1.y
     def cosBetween(vec0: Vector2D, vec1: Vector2D): Double = scalar(vec0, vec1) / abs(vec0) / abs(vec1)
-    //def sumByFunc(leftVec0: Vector2D, leftVec1: Vector2D, ???, rightVec0: Vector2D, rightVec1: Vector2D) = ???
-    /*
+    def sumByFunc(
+                   leftVec0: Vector2D,
+                   leftVec1: Vector2D,
+                   f: (Vector2D, Vector2D) => Double,
+                   rightVec0: Vector2D,
+                   rightVec1: Vector2D
+                 ): Double = f(leftVec0, leftVec1) + f(rightVec0, rightVec1)
+
     def sumScalars(leftVec0: Vector2D, leftVec1: Vector2D, rightVec0: Vector2D, rightVec1: Vector2D): Double =
-        sumByFunc(leftVec0, leftVec1, scalar, rightVec0, rightVec1)
-    */
-    /*
+      sumByFunc(leftVec0, leftVec1, scalar, rightVec0, rightVec1)
+
     def sumCosines(leftVec0: Vector2D, leftVec1: Vector2D, rightVec0: Vector2D, rightVec1: Vector2D): Double =
-        sumByFunc(leftVec0, leftVec1, cosBetween, rightVec0, rightVec1)
-    */
+      sumByFunc(leftVec0, leftVec1, cosBetween, rightVec0, rightVec1)
 
 
 
@@ -71,6 +107,15 @@ object Exercises {
             "Chrome" ->   (3,   7.18),   "Cesium" ->    (7,   1.873), "Zirconium" -> (3,   6.45)
         )
 
-    def sortByHeavyweight(ballsArray: Map[String, (Int, Double)] = balls): Seq[String] = ???
-
+    def sortByHeavyweight(ballsArray: Map[String, (Int, Double)] = balls): Seq[String] = {
+      def massOf(radiusCm: Int, density: Double): Double = {
+        val volume = (4.0 / 3.0) * math.Pi * math.pow(radiusCm.toDouble, 3) // см^3
+        density * volume // граммы
+      }
+      ballsArray
+        .toSeq
+        .map { case (name, (r, d)) => (name, massOf(r, d)) }
+        .sortBy(_._2)
+        .map(_._1)
+    }
 }
